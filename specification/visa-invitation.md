@@ -1,12 +1,10 @@
 # :airplane: Заказ визового приглашения
 
-<details><summary>Оглавление</summary>
+## Оглавление
 
-   1. [Тип визы](specification/visa-invitation.md#%D1%82%D0%B8%D0%BF%D1%8B-%D0%B2%D0%B8%D0%B7)
-   1. [Туристическая виза](specification/visa-invitation.md#runner-%D1%82%D1%83%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%B2%D0%B8%D0%B7%D0%B0)
-   1. [Деловая виза](specification/visa-invitation.md#briefcase-%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B2%D0%B8%D0%B7%D0%B0)
-
-</details>
+   1. [Тип визы](https://github.com/bronevik-com/testers-test-task/blob/main/specification/visa-invitation.md#%D1%82%D0%B8%D0%BF%D1%8B-%D0%B2%D0%B8%D0%B7)
+   1. [Туристическая виза](https://github.com/bronevik-com/testers-test-task/blob/main/specification/visa-invitation.md#runner-%D1%82%D1%83%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%B2%D0%B8%D0%B7%D0%B0)
+   1. [Деловая виза](https://github.com/bronevik-com/testers-test-task/blob/main/specification/visa-invitation.md#briefcase-%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B2%D0%B8%D0%B7%D0%B0)
 
 ---
 
@@ -25,7 +23,7 @@
 
 ### Конфигуратор типа визы
 
-![image](specification/images/configure-tourist.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/configure-tourist.png)
 
 ---
 
@@ -61,25 +59,25 @@
 
 **- Имя и фамилия**
 
-![image](specification/images/first-and-last-name.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/first-and-last-name.png)
 
 В полях `“Имя”` и `“Фамилия”` указываются данные из паспорта.
 
 **- Пол**
 
-![image](specification/images/gender.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/gender.png)
 
 Выбрать пол можно нажав на необходимую кнопку.
 
 **- Дата рождения** 
 
-![image](specification/images/date-of-birth.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/date-of-birth.png)
 
 Поле ввода в формате `[ДД.ММ.ГГГГ]`.
 
 **- Гражданство**
 
-![image](specification/images/citizenship.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/citizenship.png)
 
 Для выбора гражданства необходимо выбрать значение из списка.
 
@@ -87,14 +85,14 @@
 
    - `Вам не нужна виза для посещения России. Для получения подробной информации свяжитесь с нашей службой поддержки visainvitations@bronevik.com / +7 (495) 223-57-76.`
 
-![image](specification/images/citizenship-not-required.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/citizenship-not-required.png)
 
 Есть страны, для которых документы оформляются под запрос. К таким странам относится, например: Албания, Алжир, Мавритания и т.д. 
 Для таких стран, при выборе гражданства будет отображаться сообщение:
 
    - `Мы готовы оформить для Вас документы визовой поддержки под запрос. Пожалуйста, свяжитесь с нами по электронной почте visainvitations@bronevik.com или оставьте Ваши контактные данные, и мы свяжемся с Вами в самое ближайшее время.`
 
-![image](specification/images/citizenship-request.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/citizenship-request.png)
 
 При нажатии на кнопку `“Отправить заявку на приглашение”` выходит модальное окно `“Запрос визового приглашения”`.
 
@@ -106,17 +104,17 @@
 
    - `Обратите внимание, что для получения Российской визы Вам наиболее вероятно потребуется предоставить в консульство или визовый центр оригинал визового приглашения. Вы можете заказать доставку оригинала приглашения внизу этой формы в разделе «Доставка и контактная информация»`
 
-![image](specification/images/citizenship-china.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/citizenship-china.png)
 
 **- Номер паспорта**
 
-![image](specification/images/passport-number.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/passport-number.png)
 
 Поле ввода для номера паспорта
 
 **- Срок действия паспорта**
 
-![image](specification/images/passport-expiry-date.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/passport-expiry-date.png)
 
 Паспорт должен быть действителен не менее 6 месяцев после выезда из России.
  
@@ -130,7 +128,7 @@
 
 ### Данные о поездке
 
-![image](specification/images/trip-information.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/trip-information.png)
 
 В блоке вводятся даты заезда и выезда из России.
 
@@ -140,7 +138,7 @@
 
 ### Маршрут поездки
 
-![image](specification/images/cities-to-visit.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/cities-to-visit.png)
 
 В блоке необходимо заполнить город и место (гостиница, частная квартира и полный адрес) предполагаемого путешествия. Город и место отображаются в ваучере.
 
@@ -152,7 +150,7 @@
 
 ### Доставка и контактная информация
 
-![image](specification/images/delivery-and-contact-information-tourist.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/delivery-and-contact-information-tourist.png)
 
 Обязательным полем в этом блоке является поле `“Ваш Email”`. 
 
@@ -166,7 +164,7 @@
 
 **- Итоговая стоимость**
 
-![image](specification/images/total-price.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/total-price.png)
 
 В блоке отображается итоговая стоимость за визовое приглашение с учетом настроек указанных выше и, если есть, стоимости доставки визового приглашения почтой.
 
@@ -176,7 +174,7 @@
 
 **- Пользовательское соглашение**
 
-![image](specification/images/terms.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/terms.png)
 
 Для получения визового приглашения необходимо нажать на чекбокс `“Я согласен с условиями пользовательского соглашения”`. Пользовательское соглашения можно прочитать нажав на ссылку `”пользовательского соглашения”`.
 
@@ -202,7 +200,7 @@
 
 Если все поля были заполнены правильно, и отмечен чекбокс `“Я согласен с условиями пользовательского соглашения”` при нажатии на кнопку  `“Получить визовое приглашение”` появится alert `Данные были отправлены на сервер, спасибо`.
 
-![image](specification/images/alert-done.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/alert-done.png)
 
 ---
 
@@ -211,7 +209,7 @@
 
 ### Конфигуратор типа визы
 
-![image](specification/images/configure-business.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/configure-business.png)
 
 ---
 
@@ -252,7 +250,7 @@
 
 **- Должность**
 
-![image](specification/images/job-position.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/job-position.png)
 
 Блок `“Данные гостей”` для деловой визы отличается от блока для туристической лишь тем, что у него есть дополнительное поле `Должность`.
 
@@ -260,7 +258,7 @@
 
 ### Данные о поездке
 
-![image](specification/images/trip-information-businnes.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/trip-information-businnes.png)
 
 Для делово визы достаточно указать дату заезда в Россию. Дата выезда будет рассчитана автоматически с учетом выбранного значения в разделе `“Время пребывания”`.
 
@@ -270,7 +268,7 @@
 
 ### Маршрут поездки
 
-![image](specification/images/cities-to-visit-businnes.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/cities-to-visit-businnes.png)
 
 Место получения визы (город, страна) 
 Блок `“Маршрут поездки”` для деловой визы отличается от блока для туристической лишь тем, что у него есть дополнительное поле `"Место получения визы (город, страна)"`.
@@ -279,7 +277,7 @@
 
 ### Место работы
 
-![image](specification/images/job.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/job.png)
 
 ---
 
@@ -299,7 +297,7 @@
 
 ### Доставка и контактная информация
 
-![image](specification/images/delivery-and-contact-information-business.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/delivery-and-contact-information-business.png)
 
 Для деловой визы в блоке `“Доставка и контактная информация”` кроме текстовые поля:
    - `“Ваш Email”`. В поле должена указываться валидная почта.
@@ -317,7 +315,7 @@
 
 **- Пользовательское соглашение**
 
-![image](specification/images/terms.png)
+![image](https://github.com/bronevik-com/testers-test-task/blob/main/specification/images/terms.png)
 
 Для получения визового приглашения необходимо нажать на чекбокс `“Я согласен с условиями пользовательского соглашения”`. Пользовательское соглашения можно прочитать нажав на ссылку `”пользовательского соглашения”`.
 
