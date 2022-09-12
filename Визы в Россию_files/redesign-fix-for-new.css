@@ -1,0 +1,282 @@
+/* Fix для всплывающих элементов в Windows Phone */
+@-ms-viewport{ width:auto !important; }
+
+/* Общий шаблон */
+body { background: none; }
+
+li a, a.button { cursor: pointer; }
+
+input[type="text"], [type="password"] { border: 1px solid #ddd; font-family: inherit; }
+input[type="button"], input[type="submit"], button { font-weight: normal; }
+
+.header-block .switch-currencies a { text-decoration: underline; }
+.header-block .switch-currencies button, .header-block .switch-langs button { padding: 0 6px; }
+.header-block .switch-cities button, .footer-block .switch-cities button { height: auto; }
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Меню пользователя */
+.header-block .right-block .authorized-block .caption { padding-right: 0px; }
+.header-block .right-block .authorized-block img { margin-right: 20px; }
+
+/* Главная */
+.banner-block { cursor: pointer; }
+
+.top-gray-block .top-banners > * .name-block a {
+    color: #ffffff;
+    display: block;
+    font-family: "PT Sans Regular";
+    font-size: 21px;
+    line-height: 29px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.top-gray-block .top-banners > * .desc-block a {
+    color: #ffffff;
+    font-family: "PT Sans Regular";
+    line-height: 18px;
+    text-decoration: none;
+}
+/* Кнопка "Наверх" для длинных страниц */
+#scrollToTop {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  display: none;
+  z-index: 2;
+}
+#scrollToTop div {
+  width: 100px;
+  /*border: 1px solid #AAA;*/
+  color: #AAA;
+  text-align: center;
+  cursor: pointer;
+}
+#scrollToTop div span { background: url("/static/img/redesign/icons/icon-service-option-sprite.png?20160114") no-repeat scroll; width: 20px; height: 20px; display: inline-block; }
+#scrollToTop div.hidden-lg {
+	margin-left: -469px;
+	background-color: #AAA;
+	border-radius: 2px;
+	width: 30px;
+	height: 30px;
+}
+#scrollToTop div.hidden-lg span { background-position: -321px -164px; margin: 5px 0 0 2px; }
+#scrollToTop div.hidden-md.hidden-xs {
+	margin-left: -573px;
+	display: inline;
+	position: relative;
+	text-decoration: underline;
+	padding: 5px 7px 5px 5px;
+}
+
+#scrollToTop div.hidden-md.hidden-xs span { background-position : -264px -165px; position : relative; top : 5px; margin-right : 3px; }
+
+#scrollToTop.ultrawide div.hidden-md.hidden-xs { margin-left : -700px; }
+
+input[type=button].btn-like-checkbox, input[type=submit].btn-like-checkbox, button.btn-like-checkbox {
+    position : absolute;
+    width    : 22px;
+    height   : 22px;
+    overflow : hidden;
+    margin   : 0;
+    padding  : 0;
+    border   : 0;
+    outline  : 0;
+    opacity  : 0;
+}
+input[type="text"].longInput, input[type="password"].longInput, input[type="tel"].longInput, input[type="email"].longInput{
+    width: 100%
+}
+
+ul.checked input[type="checkbox"], ul.checked input[type="radio"] {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+opacity: 0;
+}
+
+ul.styled {
+    list-style-type: disc;
+    list-style-image: url(style-guide/src/img/marker.png);
+	list-style-position: inside;
+    padding-left: 40px;
+}
+
+input.date[type=text]:disabled {
+    background-color: #ddd;
+}
+#searchDates:disabled, .range-datepicker:disabled {
+    background-color: #ddd;
+}
+input.date{
+    cursor: pointer;
+}
+ol.styled {
+    list-style: decimal;
+    padding-left: 40px;
+}
+
+.upper-bold {
+    font-weight    : bold;
+    text-transform : uppercase;
+}
+
+ul.checked input[type="checkbox"], ul.checked input[type="radio"] {
+    display: none;
+}
+
+label.for-checkbox.disabled{
+    opacity: .65;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display : none;
+    opacity : 1 !important;
+}
+.carousel.slide.hidden-lg img{
+    max-height: 262px;
+    max-width: 383px;
+}
+.carousel.slide.hidden-xs.hidden-sm.hidden-md img{
+    height: 229px;
+    width: 335px;
+}
+.stars{
+    vertical-align: super;
+}
+.nopadding{
+    padding: 0px;
+}
+
+a.btn {
+    text-decoration:none;
+    color:#FFFFFF;
+}
+
+.btn-orange {
+    color:#FFFFFF;
+    background-color:#FF6413;
+    /*border-color:#C25F1C;*/
+}
+
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange.active,
+.open .dropdown-toggle.btn-orange {
+    color:#FFFFFF;
+    /*background-color:#FF6413;*/
+    background-color:#C25F1C;
+}
+
+.btn-orange:active,
+.btn-orange.active,
+.open .dropdown-toggle.btn-orange {
+    background-image:none;
+}
+
+.btn-orange.disabled,
+.btn-orange[disabled],
+fieldset[disabled] .btn-orange,
+.btn-orange.disabled:hover,
+.btn-orange[disabled]:hover,
+fieldset[disabled] .btn-orange:hover,
+.btn-orange.disabled:focus,
+.btn-orange[disabled]:focus,
+fieldset[disabled] .btn-orange:focus,
+.btn-orange.disabled:active,
+.btn-orange[disabled]:active,
+fieldset[disabled] .btn-orange:active,
+.btn-orange.disabled.active,
+.btn-orange[disabled].active,
+fieldset[disabled] .btn-orange.active {
+    background-color:#FF6413;
+    border-color:#C25F1C;
+}
+
+.btn-orange .badge {
+    color:#FF6413;
+    background-color:#FFFFFF;
+}
+
+.btn.btn-square {
+    border-radius:0;
+}
+
+.nds-information {
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 3px solid rgb(255, 102, 0);
+    border-radius: 15px;
+}
+
+.nds-information strong {
+    color: rgb(255, 102, 0);
+}
+
+/* Исправления ui-autocomplete */
+.ui-widget li { list-style-image: none; }
+
+.ui-autocomplete {
+    z-index : 10000;
+}
+
+.ui-autocomplete.ui-menu * {
+    font-size : 13px;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item-wrapper {
+    width   : 100%;
+    display : inline-block;
+    position: relative;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item-wrapper:hover {
+    color : #333;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item-wrapper.ui-state-active {
+    background-color : #eee;
+    border           : none;
+    margin           : 0;
+    color            : #333;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item-wrapper .gray-text {
+    font-family: "Open Sans Semibold", sans-serif;
+}
+
+.ui-autocomplete.ui-menu .ui-autocomplete-category {
+    padding: 5px;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item.icon-search .ui-menu-item-wrapper {
+    padding-left: 30px;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item.icon-search .ui-menu-item-wrapper::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 20px;
+    background: url('/static/img/redesign/icons/icon-object-type-sprite.png') no-repeat 3px 0;
+}
+.ui-autocomplete.ui-menu .ui-menu-item.icon-search.icon-hotel .ui-menu-item-wrapper::before {
+    background-position: 3px -48px;
+}

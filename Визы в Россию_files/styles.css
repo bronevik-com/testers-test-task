@@ -1,0 +1,113 @@
+.checkbox,
+.radio {
+	/* Enable absolute positioning of the hidden form controls */
+	position: relative;
+	/* Just a bit of space. */
+	margin-bottom: 0.5em;
+	/*
+	Match line-height to the height of the replacement image to ensure it
+	doesn't get clipped
+	*/
+	line-height: 22px;
+}
+
+fieldset :last-child {
+	margin-bottom: 0;
+}
+
+/* Position and hide the real checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+	position: absolute;
+	/* Match the image dimensions */
+	width: 22px;
+	height: 22px;
+	/* Reset anything that could peek out or interfere with dimensions */
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	opacity: 0;
+}
+
+/*
+Insert a pseudo element inside each label and give it a background
+image that will become the custom checkbox or radio button.
+Using inline-block lets you use vertical-align to adjust it vertically
+as needed.
+*/
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin-right: 4px;
+	background: url(style-guide/src/img/redesign/radio-checkbox.png?2) no-repeat;
+	content: " ";
+	vertical-align: top;
+}
+
+/*
+Position the background image differently depending on the state of each
+checkbox and radio button.
+*/
+/* radio */
+input[type="radio"]:focus + label:before {
+	background-position: 0 -22px;
+}
+
+input[type="radio"]:checked + label:before {
+	background-position: 0 -44px;
+}
+
+input[type="radio"]:checked:focus + label:before {
+	background-position: -0 -66px;
+}
+
+/* /radio */
+
+/* checkbox */
+input[type="checkbox"] + label:before {
+	background-position: 0 -88px;
+}
+
+input[type="checkbox"]:focus + label:before {
+	background-position: 0 -110px;
+}
+
+input[type="checkbox"]:checked + label:before {
+	background-position: 0 -132px;
+}
+
+input[type="checkbox"]:checked:focus + label:before {
+	background-position: 0 -154px;
+}
+
+/* /checkbox */
+
+/* orange checkbox */
+input.orange[type="checkbox"] + label:before {
+	background-position: -22px -88px;
+}
+
+input.orange[type="checkbox"]:focus + label:before {
+	background-position: -22px -110px;
+}
+
+input.orange[type="checkbox"]:checked + label:before {
+	background-position: -22px -132px;
+}
+
+input.orange[type="checkbox"]:checked:focus + label:before {
+	background-position: -22px -154px;
+}
+
+input[type="checkbox"][disabled] + label:before {
+	background-position: 0 -88px;
+}
+input[type="checkbox"][disabled]:checked + label:before {
+	background-position: 0 -132px;
+}
+
+/* /orange checkbox */

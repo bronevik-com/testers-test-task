@@ -1,0 +1,172 @@
+/* Отступ старого контента от шапки */
+.center-block { padding-top: 20px; }
+
+/* Иконка старого календарика */
+.datepicker_icon { display: none; } 
+i.datepicker { background: none; }
+
+/* Форма поиска */
+.search_form_orange input[type=text]{
+    height: initial !important;
+    line-height: initial !important;
+}
+div.shp-hotel-content-right > a, #search_button 
+{
+    color: #FFF !important;
+    text-decoration: initial !important;
+}
+.shp-search-form-nodates
+{
+    margin-left: 20px;
+}
+.shp-search-form span.cleanable span
+{
+    top:6px;
+}
+.responsible-manager {
+    float:right;
+    text-align: right;
+    margin-top: 25px;
+}
+@media (max-width: 1240px){
+    .responsible-manager {
+        float:left;
+        text-align: left;
+    }
+}
+
+/* Страница отеля */
+.hotel-search-prices-popup .search_button_td { vertical-align: bottom; }
+table#price #offers td.hotel-room-type { vertical-align: middle; }
+table#price #offers ul {
+	list-style-image: url("/static/img/marker.png");
+    list-style-type: disc;
+}
+table#price { border-collapse: separate; }
+
+.hotel_search_rating { padding-right: 5px; }
+.hotel_search_feedback { margin-bottom: -7px; }
+
+/* Страница экспресс-бронирования */
+.bookExpressForm .card-data-container {  width: 285px; height: 220px; }
+.card-data input[type="text"] { width: 100% !important; }
+
+/* Слфайдер фото отеля */
+.hotel-gallery-nav 
+{ 
+    position: absolute; 
+    top: 50%; 
+    width: 43px !important; 
+    height: 74px !important; 
+    margin-top: -22px; 
+    padding: 15px 10px; 
+    cursor: pointer; 
+    background: rgba(5,5,5,0.15); 
+}
+
+/* Страница заказа трансфера */
+.transfer_form td { vertical-align: middle; }
+
+/* Страница Корзина */
+.cart_form td { vertical-align: middle; }
+.cart-trasfer-form td { padding: 5px 5px 0 0; vertical-align: middle; }
+
+/* Страница ввода контактных данных после Корзины */
+#book_form_table td { vertical-align: middle; }
+
+/* Страница добавления отеля */
+a.haPanel:link, a.haPanel:visited, a.haPanel:link *, a.haPanel:visited * { text-decoration: none; color: #fff; text-shadow: none; }
+a.haSelect:link, a.haSelect:visited, a.haSelect:link *, a.haSelect:visited * { color: #dd5f0a; text-shadow: none; }
+.haContent td { padding: 10px; }
+a.haJS { border-bottom: none; }
+.haInput { margin: 5px 0; }
+.haInput label { line-height: inherit; }
+.haInput .haSmall label { font-size: inherit; }
+.haInput .haSmall input[type="text"] { font-size: inherit; height: 33px; width: 100%; }
+.haInput input[type="text"] { height: 33px; }
+.haInput .haSmall select { font-size: inherit; height: inherit; }
+
+/* Страница FAQ */
+#faq_table .question > a span { border-bottom: none; }
+
+/* form search hotel main */
+.search_form_orange input{
+    height: initial !important;
+    line-height: initial !important;
+}
+.search_form_orange .datepicker{
+    font-family: Arial, Verdana, sans-serif; 
+}
+.search_form_orange > table { width: 650px; }
+.search_form_orange .search_form_background { border-radius: 12px 12px 12px 12px !important; }
+.search_form_orange .search-form-orange-tabs { display: none; }
+@media (min-width: 1240px) {
+	.search_form_orange > table { width: 800px; }
+	.search_form_orange .search_form_background { border-radius: 12px 12px 12px 12px !important; }
+	.search_form_orange .search-form-orange-tabs { display: none; }
+}
+/* form search hotel mini */
+.search_form * {
+    -webkit-box-sizing: initial !important;
+    -moz-box-sizing: initial !important;
+    box-sizing: initial !important;
+}
+.search_mini_form_table * {
+    font-size: 13px;
+}
+.search_form_mini input{
+    height: initial !important;
+    line-height: initial !important;
+}
+.search_form_mini .datepicker{
+    font-family: Arial, Verdana, sans-serif; 
+}
+
+#main_find_form > table > tbody > tr.datepicker_noicon > td{
+    width: 130px;
+}
+
+/* label > input[type=checkbox] {
+    opacity: 1;
+    height: inherit;
+    position: inherit;
+}
+*/
+/* Стайлинг старых чекбоксов внутри лэйблов */
+label > input[type="checkbox"] + span.check {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin-right: 4px;
+    content: " ";
+	vertical-align: top;
+    background : url(style-guide/src/img/redesign/radio-checkbox.png?2017-10-16) no-repeat 0 -88px;
+}
+label > input[type="checkbox"]:focus + span.check {
+	background-position: 0 -110px;
+}
+label > input[type="checkbox"]:checked + span.check {
+	background-position: 0 -132px;
+}
+label > input[type="checkbox"]:checked:focus + span.check {
+	background-position: 0 -154px;
+}
+label > input[type="checkbox"]:disabled + span.check {
+    background-position: 0 -176px;
+}
+label > input[type="checkbox"]:disabled:checked + span.check {
+    background-position: 0 -198px;
+}
+
+form#bookForm table#transfers .form-control {
+    width: 100%;
+}
+
+/* Старый поиск для агентов */
+.hotel_priority_index { width: 31px; height: 33px; }
+.hotel_priority_index div { font-family: "Arial"; }
+/* /Старый поиск для агентов */
+
+/* Страница бронирования для агентств */
+#bookFormTable tr.show { display: table-row !important; }
+/* /Страница бронирования для агентств */

@@ -1,0 +1,2160 @@
+.nowrap { white-space : nowrap; }
+
+/*обрамление страницы сайта*/
+.page { min-width : 960px; max-width : 1100px; margin : auto; padding : 0 4px; }
+
+/*элемент для лого сайта и формы выхода*/
+.header {
+    font-size          : 0.9em;
+    margin             : 0;
+    background         : url('/static/img/bg_header.png') right top no-repeat #1F1A17;
+    height             : 92px;
+
+    /*скругление*/
+    position           : relative;
+    -moz-border-radius : 0 0 7px 7px;
+    border-radius      : 0 0 7px 7px;
+    *z-index           : 1;
+}
+
+/*Элемент для текста*/
+.content {
+    min-height : 200px;
+    padding    : 20px 0 20px 0;
+}
+
+/* top small menu */
+#menu_top { position : absolute; *padding-top : 10px !important; top : 47px; right : 60px; color : #CCC; }
+
+#menu_top li { display : block; float : left; font-size : 13px; padding : 1px 0 0; }
+
+#menu_top li.end { border : 0; display : block; float : left; font-size : 1.1em; padding : 1px 0 0; }
+
+#menu_top li a { color : #ccc; cursor : pointer; font-weight : normal; }
+
+/* Breadcrumbs (хлебные крошки) */
+.breadcrumbs_menu { color : #707070; padding-bottom : 10px; }
+
+.breadcrumbs_menu a { text-decoration : underline; }
+
+/* Универсальные хлебные крошки хлебные крошки */
+.breadcrumbs {margin : 15px 0 -15px 15px;}
+
+.breadcrumbs a {text-decoration : underline;}
+
+/* Слайдер рекомендованных отелей на главной */
+.recommended_block {
+    min-height   : 140px;
+    width        : 150px;
+    margin-right : 15px;
+}
+
+.recommended_photo {
+    margin-bottom : 3px;
+    margin-left   : -4px;
+    height        : 94px;
+    width         : 154px;
+    border-radius : 6px 6px 6px 6px;
+}
+
+/*Информационный блок*/
+div.info_block {
+    margin : 20px 0;
+}
+
+div.info_block > div.caption {
+    padding   : 7px 0 7px 20px;
+    position  : relative;
+    font-size : 20px;
+    color     : #707070;
+}
+
+.right_block div.info_block > div.caption {
+    font-size : 18px;
+}
+
+div.info_block > div.text {
+    background : #FFF;
+    border     : 1px solid #DDD;
+    padding    : 20px;
+}
+
+div.info_block > div.text table.report {
+    border : none;
+}
+
+div.info_block > div.text table.report tr:first-child td, div.dialog table.report tr:first-child td {
+    border-top : none !important;
+}
+
+div.info_block > div.text.popup {
+    border-radius : 0 0 7px 7px;
+    border-width  : 1px 0 0 0;
+}
+
+div.info_block > div.without_caption {
+    position : relative;
+    border   : 1px solid #ccc;
+}
+
+div.info_block > div.text_with_footer {
+    border     : 1px solid #ccc;
+    border-top : none;
+    padding    : 20px;
+}
+
+div.info_block > div.footer {
+    background-color : #cecece;
+    border-top       : 1px solid #9b9c98;
+    font-weight      : bold;
+    padding          : 10px 0 10px 20px;
+    position         : relative;
+}
+
+/* Блок свернутого текста */
+div.minimized_block {
+    position      : relative;
+    height        : 98px;
+    overflow      : hidden;
+    margin-bottom : 5px;
+}
+
+div.minimized_fade {
+    background : -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(250, 250, 250, 1) 100%); /* FF3.6+ */
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(250, 250, 250, 1))); /* Chrome,Safari4+ */
+    background : -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(250, 250, 250, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background : -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(250, 250, 250, 1) 100%); /* Opera 11.10+ */
+    background : -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(250, 250, 250, 1) 100%); /* IE10+ */
+    background : linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(250, 250, 250, 1) 100%); /* W3C */
+    filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#fafafa', GradientType=0); /* IE6-9 */
+    bottom     : 0;
+    height     : 22px;
+    position   : absolute;
+    width      : 100%;
+}
+
+div.minimized_fade_white {
+    background : -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); /* FF3.6+ */
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1))); /* Chrome,Safari4+ */
+    background : -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background : -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); /* Opera 11.10+ */
+    background : -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); /* IE10+ */
+    background : linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); /* W3C */
+    filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+}
+
+
+/* Форма поиска */
+.radio_group input[type=radio] {
+    position   : absolute;
+    z-index    : -1;
+    visibility : hidden;
+}
+
+.radio_group {
+    display : inline;
+}
+
+.radio_group label {
+    cursor : pointer;
+    margin : 0 2px;
+}
+
+.radio_group label.current {
+    font-weight : bold;
+    font-size   : 1.2em;
+    cursor      : default;
+}
+
+
+.search_form {
+    position   : relative;
+    margin-top : 0;
+}
+
+.search_form input:-moz-placeholder {
+    color : #ACBDC6 !important;
+}
+
+.search_form input:-ms-input-placeholder {
+    color : #ACBDC6 !important;
+}
+
+.search_form input.target_error {
+    border : 2px solid #EE2840 !important;
+    margin : 2px auto -1px -1px !important;
+}
+
+.search_form_caption {
+    margin          : 7px 0 7px 0;
+    color           : #FFF;
+    font-size       : 20px;
+    font-weight     : bold;
+    text-shadow     : #b67916 0 1px 1px;
+    float           : left;
+    *padding-bottom : 7px;
+}
+
+.search_form_orange {
+    color           : #FFF;
+    display         : block;
+    background      : none !important;
+    border          : none !important;
+    padding         : 0 !important;
+    border-radius   : 16px !important;
+    background-size : 100% 100% !important;
+}
+
+.search_form_orange input[type="text"],
+.search_form_orange select,
+.search_form_mini input[type="text"],
+.search_form_mini select,
+.hotel-search-prices-popup input[type="text"],
+.hotel-search-prices-popup select {
+    font-size     : 16px;
+    font-weight   : bold;
+    color         : #1F1A17;
+    border-radius : 4px;
+    border-color  : #cf7529;
+    margin-top    : 3px;
+    width         : 110px !important;
+    box-shadow    : 1px 1px 4px #CACACA inset;
+    padding       : 2px 8px 2px 10px !important;
+}
+
+/* Хак для Safari и Chrome */
+@media screen and (-webkit-min-device-pixel-ratio : 0) {
+    .search_form_orange input[type="text"], .search_form_orange select {
+        padding : 3px 8px 1px 10px !important;
+    }
+}
+
+.search_form_orange input[type="text"]#target,
+.search_form_orange input[type="text"]#from, .search_form_orange input[type="text"]#to {
+    font-size   : 18px !important;
+    font-weight : normal !important;
+}
+
+.search_form_orange input[type="text"]:focus, .search_form_orange select:focus {
+    border-color : #b45500 !important;
+}
+
+.search_form_orange select {
+    width   : 123px !important;
+    padding : 1px 1px 1px 7px !important;
+}
+
+.search_form_orange select#classSelect {
+    width        : 110px !important;
+    margin-right : 25px;
+}
+
+.search_form_orange .search_button_container,
+.search_form_mini .search_button_container,
+.search-offers .search_button_container,
+.hotel-search-prices-popup .search_button_container {
+    border-radius : 6px !important;
+    border        : 2px solid #fff !important;
+    float         : left;
+    box-shadow    : 0 2px 0 #B75200;
+    background    : #E36D0D;
+}
+
+.hotel-search-prices-popup .search_button_container { background-color : #ee8c21; box-shadow : 0 2px 0 #d56c18; }
+
+.search-offers .search_button_container { background : #F08F26; margin-left : 10px; }
+
+.search-offers:hover .search_button_container { background : #F59A2E; }
+
+.search_form_orange .search_button_td,
+.search_form_mini .search_button_td,
+.hotel-search-prices-popup .search_button_td {
+    width       : auto;
+    padding-top : 21px;
+    white-space : nowrap;
+    text-align  : right;
+}
+
+.hotel-search-prices-popup .search_button_td { padding-top : 9px; }
+
+/* Хак для Firefox */
+@-moz-document url-prefix() {
+    .search_form_orange .search_button_td {
+        padding-right : 20px;
+    }
+    .search_form_orange input[type="button"],
+    .search_form_mini input[type="button"],
+    .hotel-search-prices-popup input[type="button"] {
+        margin-top : -3px;
+    }
+}
+
+.search_form_orange .search_button_container:hover,
+.search_form_mini .search_button_container:hover {
+    background : #ea7f1d;
+}
+
+.hotel-search-prices-popup .search_button_container { background : #F49F29; }
+
+.hotel-search-prices-popup .search_button_container:hover { background : #F7AA45; }
+
+.search_form_orange input[type="button"],
+.search_form_mini input[type="button"],
+.search-offers input[type="button"],
+.hotel-search-prices-popup input[type="button"] {
+    font-size      : 16px !important;
+    color          : #FFF;
+    text-shadow    : #9e4b00 0 1px 1px;
+    background     : transparent;
+    border         : none;
+    cursor         : pointer;
+    padding-bottom : 0 !important;
+    *overflow      : visible !important;
+    *width         : auto !important;
+}
+
+.search_form_type {
+    width  : 160px;
+    height : 50px;
+}
+
+.search_form_type a, .search_form_type span {
+    padding : 16px 0 0 20px;
+    color   : #333 !important;
+}
+
+.search_form_background_radius {
+    border-radius : 12px 6px 6px 12px !important;
+}
+
+.search_tabs_frame {
+    border-radius    : 0 12px 12px 0;
+    border           : solid #DDD;
+    border-width     : 1px 1px 1px 0;
+    background-color : #FFF;
+}
+
+span.cleanable { position : relative; }
+
+span.cleanable input::-ms-clear { display : none; }
+
+span.cleanable input.ui-autocomplete-loading { background-position : right 22px center; }
+
+span.cleanable span {
+    position   : absolute;
+    display    : block;
+    top        : 0;
+    right      : 8px;
+    width      : 11px;
+    height     : 11px;
+    background : url('/static/img/cross.png') no-repeat;
+    cursor     : pointer;
+}
+
+/* Форма поиска отеля для внутренней страницы */
+.search_form_mini {
+    background    : url('/static/img/search_form_orange_bg4mini.png') no-repeat #E46B0B;
+    padding       : 5px 0 15px 18px;
+    border-radius : 12px;
+    color         : #FFF;
+}
+
+.search_form_mini .datepicker { padding-left : 2px !important; }
+
+.search_form_mini select { padding : 1px 1px 1px 7px !important; }
+
+.divider_dots {
+    width      : 100%;
+    height     : 5px;
+    background : url('/static/img/divider_dots.png') 0 0 repeat-x;
+}
+
+ul.slider {padding : 2px 0 0 14px !important;}
+
+ul.slider li {display : block; padding : 0; float : left; margin : 0 9px;}
+
+ul.slider li a {display : block; float : none; position : relative; text-decoration : none;}
+
+ul.slider li a span {width : 152px; display : block; }
+
+/*Репорты со списком элементов*/
+table.report {
+    width         : 100%;
+    margin        : 20px 0;
+    empty-cells   : show;
+    border        : 1px solid #DDD;
+    padding       : 0;
+    background    : #FFF;
+    border-radius : 7px;
+    border-top    : none;
+}
+
+/* table.report th { color: #737373; text-shadow: #fbfbfb 0px 1px 0px; } */
+/* table.report th { color: #FFF; text-shadow: #a0a0a0 0px 1px 0px; } */
+table.report th { color : #737373; text-shadow : #fbfbfb 0 1px 0; background : #EEE; }
+
+table.report th, table.report td { border-top : 1px solid #DDD; padding : 7px 10px; text-align : left;}
+
+table.report tr.noborder th, table.report tr.noborder td { border-bottom : 0 solid #cccccc; border-top : 0 solid #cccccc; }
+
+/* table.report tr:last-child td { border-bottom: none !important; background-color: #FF0000 !important;} */
+
+/*стили для строк блока thead */
+/* table.report thead tr{ background: url('/img/table_head_grey2.png') left top repeat-x #d0d0d0; border-radius: 7px 7px 0px 0px;} *//*#ebebeb*/
+table.report thead tr { border-radius : 7px 7px 0 0;}
+
+table.report thead td, table.report thead th {padding : 5px 10px; /* border-top:1px solid #efefef; */}
+
+/*border-bottom:1px solid #da251d;*/
+/*скругление на первую и последнюю ячейку*/
+table.report thead .first { border-radius : 7px 0 0 0; border-left : 1px solid #EFEFEF;}
+
+/*background: url('/img/bg_report_head_left.png') left top no-repeat;  background-color: transparent;}*/
+table.report thead .last { border-radius : 0 7px 0 0; border-right : 1px solid #EFEFEF;}
+
+/*background: url('/img/bg_report_head_right.png') right top no-repeat; background-color: transparent;}*/
+
+/* table.report tbody .first {border-left:  1px solid #CCC;}
+table.report tbody .last  {border-right: 1px solid #CCC;} */
+
+.slim table.report td, .slim table.report th { padding : 2px; }
+
+table.report tr.agent_commission { /* line-height: 4px; */ font-weight : bold; /* background: #FFDA82; */}
+
+table.report tr.agent_commission td {border-top : 1px dashed #DDD; padding : 3px 10px 4px 10px;}
+
+table.report tr.agent_commission td span.agent_commission_price { /* color: #2D98CE; */ /*background:  url('/img/commission_coins.png') 4px 4px no-repeat  #F5F5F5;*/ padding : 2px 5px 7px 21px; margin-left : -21px;}
+
+table.report th a.currency_code {position : relative; top : 4px; font-size : 10px; background : none repeat scroll 0 0 #EEEEEE; border-radius : 3px 3px 3px 3px; box-shadow : 0 1px 0 #DDDDDD; padding : 0 3px;}
+
+/*ffda82*/
+/* Быстрый поиск */
+.qsearchDataDiv { position : absolute; border : 1px solid black; background-color : white; }
+
+.qsearchDataDiv div.data { font-size : 10px; padding-top : 3px; border-top : 1px dashed black; cursor : default; margin-top : 5px; }
+
+.qsearchResDiv {overflow-y : auto; max-height : 300px; }
+
+.qsearchResDiv div { padding : 3px 3px 0 5px; cursor : pointer; font-size : 14px; }
+
+.qsearchResDiv div.selected { background-color : #BBBBBB !important; }
+
+.qsearchResDiv div.odd { background-color : #ddd;}
+
+.qsearchProgressBar { position : absolute; z-index : 10; }
+
+.qsearchHiddenProgressBar { display : none; }
+
+/* Пагинатор */
+.paginator { margin : 20px 0; background-color : #EEEEEE; border : 1px solid #DDDDDD; padding : 10px 20px; width : 100%; }
+
+.paginator .pagecurrent { background-color : #F59E40; color : #FFF; border : 1px solid #da251d; }
+
+.paginator .pagelink, .paginator .pagecurrent { padding : 5px 8px; margin : 0 5px; }
+
+.paginator .pagelink a {text-decoration : underline;}
+
+/* Различные скругления углов */
+.round {
+    -moz-border-radius : 7px;
+    border-radius      : 7px;
+
+    position           : relative;
+}
+
+.round_without_ie {
+    -moz-border-radius : 7px;
+    border-radius      : 7px;
+}
+
+.hide { display : none; }
+
+ul {
+    list-style-type  : disc;
+    list-style-image : url(/static/img/marker.png);
+}
+
+.left_block_wrapper {
+    float : left;
+    width : 100%;
+}
+
+.left_block {
+    margin-right : 310px;
+}
+
+.right_block {
+    margin : 0 0 0 -280px;
+    float  : right;
+    width  : 280px;
+}
+
+tr.odd { background-color : #dfdfdf; }
+
+.modal_back {
+    top              : 0;
+    left             : 0;
+    position         : absolute;
+    background-color : #ccc;
+    z-index          : 4;
+    opacity          : 0.8;
+    filter           : alpha(opacity=80);
+}
+
+.tabcontrol div {
+    margin-right       : 5px;
+    padding            : 7px 12px;
+    font-size          : 16px;
+    float              : left;
+
+    background         : #DFDFDF;
+    border             : 1px solid #ccc;
+    border-bottom      : none;
+
+    /*скругление*/
+    position           : relative;
+    -moz-border-radius : 7px 7px 0 0;
+    border-radius      : 7px 7px 0 0;
+
+    font-weight        : bold;
+}
+
+.tabcontrol div.active {
+    background : #ffda82;
+}
+
+a.close {
+    background    : url("/static/img/room_close.png") no-repeat scroll right center transparent;
+    padding-right : 15px;
+}
+
+a.open {
+    background : url("/static/img/room_open.png") no-repeat scroll right center transparent !important;
+}
+
+.contact_link {
+    color   : #ff6600 !important;
+    padding : 0 7px;
+    cursor  : pointer;
+}
+
+.attantion_box {
+    /* background-color: #dfdfdf; */
+    border             : 2px solid #DF6410;
+    padding            : 20px;
+    margin-bottom      : 20px;
+    font-size          : 16px;
+
+    -moz-border-radius : 7px;
+    border-radius      : 7px;
+
+    position           : relative;
+}
+
+img.round_photo {
+    -moz-border-radius : 6px;
+    border-radius      : 6px;
+}
+
+
+.hotel_image .normal {
+    position         : absolute;
+    background-color : #EEE;
+    border           : 1px solid #DDD;
+    padding          : 10px;
+    font-size        : 14px;
+    margin-left      : -1px;
+    display          : none;
+    max-width        : 300px;
+    z-index          : 10;
+}
+
+.hotel_image .normal div {
+    margin-top : 10px;
+}
+
+.hotel_image:hover .normal {
+    display : block;
+}
+
+.room_photos img {
+    margin-right  : 10px;
+    margin-bottom : 10px;
+}
+
+.hotel_priority_index {
+    margin-top    : 3px;
+    position      : relative;
+    top           : 0;
+    right         : -3px;
+    float         : right;
+    width         : 25px;
+    height        : 27px;
+    background    : #ff6600;
+    border-radius : 0 9px 0 9px;
+    border        : 3px solid #fafafa;
+}
+
+.hotel_priority_index.blacklist { background : #000000 !important; }
+
+.hotel_priority_index div { position : relative; top : -2px; font-size : 24px; font-weight : bold; text-align : center; color : #FFFFFF; }
+
+.hotel_priority_index.blacklist div { top : 4px !important; font-size : 16px !important; }
+
+/* Хак для Firefox */
+@-moz-document url-prefix() {
+    .hotel_priority_index { margin-top : -3px !important; }
+}
+
+/* Ссылка на отель с его названием */
+a.blue_link { margin-right : 5px; font-weight : bold; color : #2D98CE !important; }
+
+/* Маленькая карточка отеля */
+.hotel_card, .room_card { border-collapse : collapse; }
+
+.hotel_card td, .room_card td { vertical-align : top; padding : 0; }
+
+.hotel_card_photo, .room_card_photo { width : 90px; height : 73px; margin-top : 4px; padding-top : 3px !important; }
+
+.hotel_card div { color : #888888; font-size : 11px; line-height : 10px; padding-top : 5px; padding-bottom : 2px; }
+
+.hotel_card_price_from { color : #888888; font-weight : bold; }
+
+.hotel_card_price_from span { font-size : 11px; }
+
+/*
+* стили для окна помощи
+* @author Евгений
+*/
+.help {
+    position       : absolute;
+    z-index        : 3;
+    vertical-align : middle;
+}
+
+.help .help_content {
+    border             : 1px solid #d6a974;
+    background-color   : #FFF5C7;
+    min-width          : 100px;
+    min-height         : 30px;
+    padding            : 5px;
+    -moz-box-shadow    : 2px 2px 4px #bbb;
+    -webkit-box-shadow : 2px 2px 4px #bbb;
+    box-shadow         : 2px 2px 4px #bbb;
+}
+
+.help .help_button_right {
+    width            : 15px;
+    height           : 30px;
+    position         : absolute;
+    left             : -14px;
+    background-image : url("/static/img/yellow_help_button_left.png");
+}
+
+.help .help_button_bottom {
+    width            : 30px;
+    height           : 15px;
+    position         : absolute;
+    top              : -14px;
+    background-image : url("/static/img/yellow_help_button_top.png");
+}
+
+input.error {
+    border           : 1px solid red;
+    color            : #b0b0b0;
+    background-color : #FFE0E0;
+}
+
+span.error {
+    color : red;
+}
+
+.hotel_stars {
+    margin : 0 0 14px 0;
+}
+
+.hotel_search_features {
+    margin-top     : -5px;
+    vertical-align : bottom;
+}
+
+.hotel_search_rating {
+    color       : #FF6600;
+    font-size   : 24px;
+    margin-left : -3px;
+    font-weight : bold;
+}
+
+.hotel_search_feedback {
+    color         : #FF6600;
+    padding-top   : 3px;
+    margin-bottom : -2px;
+}
+
+.hotel_search_feedback_link { font-size : 11px; color : #666666; border-bottom : 1px dotted #666666; }
+
+.hotel_search_feedback_link:hover { text-decoration : none; color : #006699; border-bottom : 1px dotted #006699; }
+
+.city_page .city-region { margin-top : -10px; margin-bottom : 10px; color : #888888; }
+
+.hotel_page h1, .city_page h1, .country_page h1, .feedback_page h1 { margin-top : 0; margin-bottom : 10px; }
+
+.hotel_page h1 { display : inline; padding-right : 10px; }
+
+ul.offer-restrictions { margin : 0; padding : 0; min-width : 190px; }
+
+ul.offer-restrictions li { padding : 0 0 0 12px; display : block; margin-bottom : 2px; margin-top : 0 !important; }
+
+ul.offer-restrictions li.offer-restriction-basic { background : url("/static/img/list_item_dot.gif") no-repeat 0 7px; }
+
+ul.offer-restrictions li.offer-restriction-cancel-positive { font-weight : bold; color : #51a144; margin-top : 6px !important; margin-bottom : 6px; }
+
+ul.offer-restrictions li.offer-restriction-cancel-negative { font-weight : bold; color : #FF6600; margin-top : 6px !important; margin-bottom : 6px; }
+
+ul.offer-restrictions li.offer-restriction-more { margin-top : 6px !important; margin-bottom : 6px; }
+
+ul.offer-restrictions li.offer-restriction-more span { border : 1px solid #DDD; color : #333; cursor : pointer; border-radius : 3px; padding : 2px 6px; font-size : 11px; }
+
+/* ul.offer-restrictions li.offer-restriction-more span:hover { border: 1px solid #006699; } */
+a.shp-hotel-book-button, a.offer-book-button, a.shp-search-form-button {
+    display         : inline-block;
+    background      : #ee8222;
+    background      : linear-gradient(to bottom, #FBA436 0%, #DD5A0B 100%) repeat scroll #ee8222;
+    border          : medium none;
+    border-radius   : 5px;
+    box-shadow      : 0 1px 1px rgba(50, 50, 50, 0.3);
+    color           : #FFFFFF;
+    height          : 25px;
+    line-height     : 20px;
+    padding         : 4px 12px 0;
+    text-shadow     : 0 -1px rgba(50, 50, 50, 0.2);
+    font-size       : 14px;
+    font-weight     : bold;
+    position        : relative;
+    margin-top      : 0;
+    text-decoration : none;
+    cursor          : pointer;
+}
+
+a.shp-hotel-book-button:hover, a.offer-book-button:hover, a.shp-search-form-button:hover {
+    background    : linear-gradient(to bottom, #FCA644 0%, #E57519 100%) repeat scroll #ee8222;
+    box-shadow    : 0 0 1px rgba(50, 50, 50, 0.3);
+    margin-top    : 1px;
+    margin-bottom : -1px;
+}
+
+a.shp-hotel-book-button { margin-top : 5px !important; min-width : 60px; text-align : center; }
+
+a.shp-hotel-book-button:hover { margin-top : 6px !important; }
+
+a.shp-search-form-button { height : 23px; margin-top : 11px; padding : 2px 12px 0; }
+
+a.shp-search-form-button:hover { margin-top : 12px; }
+
+#searchForm .search-offers {
+    background    : url("/static/img/search_form_orange_bg4long.png") no-repeat scroll 0 0 #EB8216;
+    display       : inline-block;
+    padding       : 10px 20px;
+    border-radius : 7px;
+    color         : #FFF;
+    font-weight   : bold;
+    text-shadow   : 0 1px 1px #B67916;
+    margin-top    : 4px;
+}
+
+.hello-china-label, .china-friendly-label {
+    background : url("/static/img/hello_china_label_small.png") no-repeat 0 0;
+    margin-top : 6px;
+    padding    : 0 0 3px 81px;
+    height     : 20px;
+}
+
+.hello-china-label-large, .china-friendly-label-large { margin : 15px 0; }
+
+.hello-china-label-large .hello-china-label, .china-friendly-label-large .china-friendly-label {
+    background : url("/static/img/hello_china_label_large.png") no-repeat 0 0;
+    padding    : 4px 0 0 126px;
+    height     : 40px;
+    display    : inline-block;
+}
+
+.shp-hotel-address .shp-hotel-hello-china, .shp-hotel-address .shp-hotel-china-friendly {
+    background  : url("/static/img/hello_china_label_small.png") no-repeat 0 0;
+    margin-left : 20px;
+    padding     : 2px 0 3px 81px;
+}
+
+.china-friendly-services { padding-left : 20px; }
+
+.china-friendly-services li { list-style-position : inside; }
+
+.wifi {
+    margin-top  : 6px;
+    display     : inline;
+    line-height : 26px;
+}
+
+.wifi span {
+    padding     : 0 0 4px 22px;
+    font-size   : 12px;
+    color       : #888;
+    font-weight : bold;
+    background  : url("/static/img/wi-fi_grey.png") no-repeat;
+}
+
+.cities_hotels_list h1 {
+    font-size : 13px;
+    margin    : 0;
+}
+
+#gallery.text a {
+    text-decoration : none;
+}
+
+.callback {
+    margin-top      : 10px;
+    cursor          : pointer;
+    font-size       : 13px;
+    text-decoration : underline;
+    text-align      : center;
+}
+
+.callback span {
+    border-bottom : none !important;
+    background    : url('/static/img/callback_phone_grey.gif') no-repeat left center;
+    padding-left  : 20px;
+}
+
+.city_event {
+    color         : red;
+    font-weight   : bold;
+    margin-top    : 20px;
+    border        : 2px solid red;
+    border-radius : 7px 7px 7px 7px;
+    padding       : 10px 10px 0 10px;
+}
+
+.city_event div {
+    margin-bottom : 10px;
+}
+
+.line_through {
+    text-decoration : line-through;
+}
+
+/** Календарь */
+.zg-calendar {
+    z-index            : 1090;
+    border             : 1px solid #d6a974;
+    background-color   : #FFF5C7;
+    position           : absolute;
+    padding            : 15px;
+    text-align         : center;
+    -moz-box-shadow    : 2px 2px 4px #bbb;
+    -webkit-box-shadow : 2px 2px 4px #bbb;
+    box-shadow         : 2px 2px 4px #bbb;
+    -moz-border-radius : 7px;
+    border-radius      : 7px;
+
+}
+
+.zg-calendar table { font-size : 1em;}
+
+.zg-calendar table tbody td { text-align : right; padding : 5px 6px; }
+
+.zg-calendar table tbody td.active { cursor : pointer; color : #448da8;}
+
+.zg-calendar table tbody td.disabled { color : #999 !important; }
+
+.zg-calendar table tbody td.current { background-color : #e0bd8b; }
+
+.zg-calendar table tbody td.today { font-weight : bold; font-style : italic; color : #3c3225}
+
+.zg-calendar table tbody td.holiday { color : #660000; }
+
+.zg-calendar table tbody td.active:hover { background-color : #BCD4F9; }
+
+.zg-calendar table thead th { font-weight : 500; color : #666666; padding : 3px; text-align : right;}
+
+.zg-calendar table thead th.holiday { color : #660000; }
+
+.zg-calendar table thead tr { /*background-color: #7A96DF; */}
+
+.zg-calendar select.zg-calendar-month { font : 13px Arial, sans-serif; margin : 0 0 0 0; border : 1px solid #999999;}
+
+.zg-calendar select.zg-calendar-year { font : 13px Arial, sans-serif; margin : 0 0 0 0; border : 1px solid #999999;}
+
+.zg-calendar table {
+    width   : 180px;
+    padding : 0;
+    margin  : 0;
+}
+
+.zg-calendar table.selects {
+    padding-left   : 6px;
+    padding-bottom : 10px;
+}
+
+.zg-calendar table.selects td {
+    padding : 2px 0;
+}
+
+.zg-calendar .moveButton {
+    padding            : 0;
+    margin             : 0 4px;
+    height             : 23px;
+    width              : 18px;
+
+    -moz-border-radius : 0;
+    border-radius      : 0;
+
+}
+
+.zg-calendar .prev { background : url('/static/img/calendar_prev.png') no-repeat; }
+
+.zg-calendar .next { background : url('/static/img/calendar_next.png') no-repeat; }
+
+.zg-calendar .rightSpace {
+    margin-right : 5px;
+}
+
+/* Calendar */
+i.datepicker {-moz-background-inline-policy : continuous; background : url("/static/img/calendar.png") no-repeat scroll right center transparent; padding : 0 20px 0 0 !important; float : none !important; width : 110px; font-size : 18px}
+
+input.datepicker { border : 1px solid #7F9DB9; padding : 2px 2px 0 7px; text-align : left; width : 100px !important;cursor : pointer; font-size : 14px;}
+
+.datepicker_icon { *position : static !important; width : 19px; height : 20px; margin-left : 108px; margin-top : -23px; position : absolute; padding-top : 0; background : url("/static/img/calendar.png") no-repeat scroll right center transparent; cursor : pointer;}
+
+.datepicker_noicon i.datepicker {background : none !important; padding : 0 !important;}
+
+/* Хак для Safari и Chrome */
+@media screen and (-webkit-min-device-pixel-ratio : 0) {
+    .datepicker_icon {
+        margin-top : -25px !important;
+    }
+}
+
+/* Dialog */
+.dialog {
+    border             : 2px solid #ff6600;
+    background-color   : white;
+    min-width          : 100px;
+    max-width          : 600px;
+    min-height         : 30px;
+    padding            : 15px;
+
+    -moz-box-shadow    : 2px 2px 4px #bbb;
+    -webkit-box-shadow : 2px 2px 4px #bbb;
+    box-shadow         : 2px 2px 4px #bbb;
+
+    -moz-border-radius : 7px;
+    border-radius      : 7px;
+    position           : absolute;
+
+    z-index            : 1000;
+}
+
+.dialog .close_button {
+    cursor   : pointer;
+    float    : right;
+    position : absolute;
+    right    : 10px;
+    z-index  : 2;
+    top      : 7px;
+}
+
+.dialog .close_button a {
+    text-decoration : underline;
+    font-size       : 13px;
+}
+
+
+/* Логин, валюта и корзина */
+.loginbar {
+    position : absolute;
+    top      : 18px;
+    left     : 280px;
+    color    : #CCC;
+}
+
+.loginbar .login {
+    margin-right  : 30px;
+    border-bottom : 1px dashed #CCC;
+    padding       : 0;
+    cursor        : pointer;
+}
+
+.loginbar a {
+    color : lightgreen;
+    /*font-weight: bold;*/
+}
+
+.cart {
+    border-bottom : 1px dashed #CCC;
+}
+
+#cart:hover {
+    text-decoration : none !important;
+}
+
+#login_form input[type=text], #login_form input[type=password] {
+    width : 230px;
+}
+
+#login_form #auth_error { line-height : 16px; margin-top : -10px; margin-bottom : 10px; }
+
+#currency_select {
+    padding-left : 20px;
+}
+
+#currency_select a {
+    color           : #ccc;
+    text-decoration : none;
+    padding-right   : 0;
+    margin-right    : 4px;
+    background      : url('/static/img/gray_close.png') no-repeat center right;
+}
+
+#currency_select a span {
+    border-bottom : 1px dashed #ccc;
+    margin-right  : 12px;
+}
+
+/* Модуль лайков соц.сетей на боковой панели */
+.soc-share-link:hover { text-decoration : none; }
+
+.soc-share-link img { height : 20px; }
+
+.like_block {
+    min-height   : 165px;
+    background   : url('/static/img/bg_tour_block_like.png') no-repeat left bottom;
+    padding-left : 130px;
+}
+
+/* Ограничение видимой области карусели на главной до окончания загрузки */
+.default_circular {
+    overflow   : auto;
+    max-width  : 800px;
+    max-height : 130px;
+}
+
+/* Страница регистрации */
+.register td {
+    padding : 7px 0;
+}
+
+.reg_info ul li {
+    line-height : 22px;
+}
+
+.reg_info ul {
+    padding-left : 13px;
+}
+
+/* Страница страны со списком городов */
+#country_links { margin-bottom : 10px; }
+
+#country_links span span {
+    margin      : 10px 7px 0 7px;
+    padding     : 0;
+    white-space : nowrap;
+    line-height : 30px;
+}
+
+#country_links span.active {
+    background-color : #ffda82;
+    padding          : 5px 15px;
+    border           : 1px solid #ccc;
+    margin-right     : 0;
+    margin-left      : 0;
+}
+
+#country_links span.active a {
+    color : #333;
+}
+
+span.country_page_bigcity {
+    font-weight : bold;
+    padding     : 0 !important;
+    font-size   : 14px;
+}
+
+span.country_page_bigcity a {
+    color : #ff7f27;
+}
+
+/* удалить country_page_output после перехода на country_page_cities */
+.country_page_output td {
+    vertical-align : top;
+}
+
+.country_page_output span { color : #707070; }
+
+
+/* Формы поиска */
+table.search_mini_form_table td {
+    padding : 5px 0;
+}
+
+table.search_mini_form_table input#target { width : 210px !important; padding-right : 20px !important; }
+
+table.search_mini_form_table span.cleanable span { top : 2px; }
+
+table.search_main_form_table td {
+    padding-top : 10px;
+}
+
+table.search_main_form_table .search_main_form_table__bottom td {
+    vertical-align : bottom;
+}
+
+table.search_result_form_table td {
+    padding : 10px 3px;
+}
+
+.search_result_end td {
+    padding-bottom : 20px;
+}
+
+/* RSS block */
+ul.rss_block { padding : 10px 0 10px 0; margin : 0; list-style-type : none;}
+
+ul.rss_block li {font-size : 11px; padding : 7px 5px 4px 20px;}
+
+.rss_table td {
+    padding-left : 20px !important;
+}
+
+/* Выбор города-телефона */
+.tel {
+    text-align         : center;
+    -moz-border-radius : 7px;
+    border-radius      : 7px;
+
+    border             : 1px solid #DDD;
+
+    padding            : 15px;
+
+    margin-bottom      : 20px;
+    font-size          : 12px;
+
+    min-height         : 61px;
+    background         : #FFF;
+}
+
+.tel a {
+    color           : #333;
+    text-decoration : none;
+    padding-right   : 10px;
+    background      : url('/static/img/gray_close.png') no-repeat center right;
+}
+
+.tel span {
+    border-bottom : 1px dashed #333;
+}
+
+#tel_number {
+    font-size   : 20px;
+    padding-top : 10px;
+    text-align  : center;
+}
+
+.city_select {
+    cursor  : pointer;
+    padding : 3px 10px;
+}
+
+.tel span.alldaylong {
+    padding-left  : 10px;
+    border-bottom : 0;
+}
+
+/* Форма запроса обратного звонка */
+.callbackbar {
+    position : absolute;
+    top      : 100px;
+    left     : 315px;
+    color    : #CCC;
+}
+
+.callbackbar .callback {
+    margin-right  : 30px;
+    border-bottom : 1px dashed #CCC;
+    padding       : 0;
+    cursor        : pointer;
+}
+
+.callbackbar a {
+    color : lightgreen;
+}
+
+#callback_form input[type=text] {
+    width : 230px;
+}
+
+#callback_form label.error { color : red; }
+
+/* Модуль специальных предложений */
+#offer_list_table .name {
+    padding-left : 24px;
+}
+
+#offer_list_table .price {
+    font-size     : 12px;
+    padding-right : 20px;
+    white-space   : nowrap
+}
+
+#offer_city_select {
+    width : 208px;
+}
+
+/* Модуль новости отелей */
+table.hotel_news td {
+    padding : 10px 15px 10px 24px;
+}
+
+/* Карта */
+#mapToggleCaption, #mapToggleAltCaption { font-size : 16px; font-weight : bold; }
+
+#map_frame.sliding_map {
+    border-bottom : 3px solid #FFFFFF !important;
+    background    : #FFFFFF;
+    box-shadow    : 0 4px 8px -4px #CCCCCC;
+    border-radius : 7px 7px 7px 7px;
+}
+
+.sliding_map_container {
+    position      : relative;
+    margin-top    : 5px;
+    margin-bottom : 15px;
+}
+
+.sliding_map_button {
+    position   : absolute;
+    left       : 43%;
+    bottom     : 8px;
+    text-align : center;
+}
+
+.sliding_map_button a {
+    font-size       : 11px;
+    font-weight     : bold;
+    text-decoration : underline;
+    padding         : 3px 12px 4px 12px;
+    background      : #FFFFFF;
+    border-radius   : 6px 6px 0 0;
+    cursor          : pointer;
+    /*box-shadow: 0px 4px 8px -4px #CCCCCC;*/
+}
+
+.map_fade {
+    background    : -moz-linear-gradient(top, rgba(120, 120, 120, 0.3) 0%, rgba(120, 120, 120, 0.08) 50%, rgba(120, 120, 120, 0) 100%);
+    background    : -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(120, 120, 120, 0.3)), color-stop(50%, rgba(120, 120, 120, 0.08)), color-stop(100%, rgba(120, 120, 120, 0)));
+    background    : -webkit-linear-gradient(top, rgba(120, 120, 120, 0.3) 0%, rgba(120, 120, 120, 0.08) 50%, rgba(120, 120, 120, 0) 100%);
+    background    : -o-linear-gradient(top, rgba(120, 120, 120, 0.3) 0%, rgba(120, 120, 120, 0.08) 50%, rgba(120, 120, 120, 0) 100%);
+    background    : -ms-linear-gradient(top, rgba(120, 120, 120, 0.3) 0%, rgba(120, 120, 120, 0.08) 50%, rgba(120, 120, 120, 0) 100%);
+    background    : linear-gradient(to bottom, rgba(120, 120, 120, 0.3) 0%, rgba(120, 120, 120, 0.08) 50%, rgba(120, 120, 120, 0) 100%);
+    filter        : progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d787878', endColorstr='#00787878', GradientType=0);
+
+    position      : absolute;
+    z-index       : 1;
+    height        : 12px;
+    width         : 100%;
+    border-radius : 7px 7px 0 0;
+}
+
+/* Форма запроса цен на отель */
+#request_price_form .noborder {
+    border-spacing : 0;
+    border-width   : 0;
+}
+
+.request_pricebar {
+    position : absolute;
+    top      : 100px;
+    left     : 315px;
+    color    : #CCC;
+}
+
+.request_pricebar .request_price {
+    margin-right  : 30px;
+    border-bottom : 1px dashed #CCC;
+    padding       : 0;
+    cursor        : pointer;
+}
+
+.request_pricebar a {
+    color : lightgreen;
+}
+
+#request_price_form input[type=text], #request_price_form textarea {
+    width : 312px;
+}
+
+#request_price_form label.error, #request_price_form label.comment-valid-emails {
+    color : red;
+}
+
+/* Страница результатов поиска */
+.hotel-search-filter { margin-bottom : 10px; }
+
+.hotel-search-filter-settings { margin-top : 10px; }
+
+.hotel-search-filter-settings div { margin-bottom : 5px; }
+
+.hotel-search-filter-settings label { display: flex; }
+.hotel-search-filter-settings label input { margin-right: 7px; }
+.hotel-search-filter-settings label span.check { flex-shrink: 0; }
+.hotel-search-filter-caption { color : #006699; font-weight : bold; cursor : pointer; padding : 0 0 0 14px; margin-left : 6px; background : url('/static/img/room_open.png') no-repeat 0 6px; }
+
+.hotel-search-filter-caption.collapsed { background : url('/static/img/room_close.png') no-repeat 0 6px; }
+
+.hotel-search-filter-reset { display : none; font-size : 11px; padding-top : 2px; padding-left : 10px; cursor : pointer; }
+
+#sort {
+    padding : 0 18px;
+}
+
+#sort a {
+    padding : 5px 6px 5px 10px;
+}
+
+#sort a.selected {
+    border     : 1px solid #ccc;
+    background : #FFF;
+    color      : #333;
+}
+
+.search_form.result_page .caption {
+    background : url('/static/img/bg_plus_open.png') 20px center no-repeat #FFDA82;
+}
+
+.search_form.result_page .caption > span {
+    margin        : 20px;
+    cursor        : pointer;
+    border-bottom : 1px dashed #333;
+}
+
+.hide_form .caption {
+    border     : none !important;
+    background : url('/static/img/bg_plus_close.png') 20px center no-repeat #FFDA82 !important;
+}
+
+.hide_form .text {
+    display : none !important;
+}
+
+.hide_form .alttext {
+    display : block !important;
+}
+
+.search_form.result_page a.close {
+    padding-right : 20px;
+    background    : url('/static/img/room_close.png') right center no-repeat;
+}
+
+.search_form.result_page .text {
+    background-color : #dfdfdf;
+}
+
+.search_form.result_page a.open {
+    background : url('/static/img/room_open.png') right center no-repeat !important;
+}
+
+table.cost_info td, table.cost_info th {
+    padding   : 10px 20px !important;
+    font-size : 14px !important;
+}
+
+tr.hidden_row { display : none; }
+
+table.report tr.slim td { padding : 4px 10px; }
+
+.bronevik-guarantee { position : absolute; width : 88px; height : 92px; top : -9px; right : -20px; background : url('/static/img/bronevik_guarantee_large.png?1'); }
+
+/* Таблицы номеров с ценами */
+.quota-request { margin : auto; width : 65px; line-height : 15px; color : #888888; font-size : 12px; }
+
+/* Страница отеля */
+.hotel_search td { padding-right : 30px; }
+
+.date_bg {
+    position   : absolute;
+    left       : 550px;
+    width      : 100px;
+    height     : 125px;
+    top        : 0;
+    background : url('/static/img/bg_hotelpage_datesearch.png') no-repeat;
+}
+
+div.avoid ul {
+    padding-left : 0;
+}
+
+div.avoid ul li {
+    list-style : none;
+}
+
+img.book_button_sprite {
+    background : url('/static/img/button_book3.png') no-repeat;
+    width      : 46px;
+    height     : 27px;
+}
+
+img.book_button_sprite:hover, img.book_button_sprite.hover {
+    background-position : 0 -28px;
+}
+
+/* Форма поиска предложений на выбранные даты */
+.hotel-search-prices { margin : 0 0 -5px 0; font-size : 15px; padding-left : 12px; }
+
+.hotel-search-prices .change-dates { display : inline; margin-left : 10px; border : 1px solid #DDD; border-radius : 5px; padding : 4px 10px; cursor : pointer; background : #FFF; font-size : 13px; font-weight : bold; }
+
+.hotel-search-prices .change-dates:hover { text-decoration : underline; }
+
+.hotel-search-prices .tax-and-fee { float : right; color : #666; font-size : 13px; padding-right : 10px; padding-top : 2px; }
+
+.ui-no-titlebar { border : none !important; box-shadow : 0 1px 5px #bbb; }
+
+.ui-no-titlebar .ui-dialog-titlebar { display : none; }
+
+.hotel-search-prices-popup { position : relative; box-shadow : 0 2px 4px #bbb; background : #FFF !important; display : none; padding : 5px !important; border-radius : 7px; min-height : 0 !important; }
+
+.hotel-search-prices-popup .title { font-size : 16px; color : #777; padding-left : 11px; padding-top : 4px; }
+
+.hotel-search-prices-popup span.close-cross {
+    background : url("/static/img/cross.png") no-repeat;
+    cursor     : pointer;
+    display    : block;
+    height     : 11px;
+    width      : 11px;
+    position   : absolute;
+    right      : 14px;
+    top        : 12px;
+}
+
+.hotel-search-prices-popup form { color : #FFF; background : url('/static/img/search_form_orange_bg4long_new_bottom.png') no-repeat #f1891d; margin-top : 8px; border-radius : 5px; padding : 10px 18px 15px 18px; }
+
+.hotel-search-prices-popup form input[type="text"], .hotel-search-prices-popup form select { font-family : Arial; font-size : 16px; }
+
+.hotel-search-prices-popup form input[type="text"] { width : 110px !important; }
+
+.hotel-search-prices-popup form select { width : 134px !important; padding : 1px 8px 1px 8px !important;}
+
+/* Страница специальных предложений */
+a.book_button_specialpage {
+    background     : url('/static/img/button_book.png') no-repeat right;
+    height         : 23px;
+    padding-right  : 38px;
+    padding-top    : 5px;
+    padding-bottom : 5px;
+    line-height    : 23px;
+}
+
+a.book_button_specialpage:hover, a.hover {
+    background : url('/static/img/button_book_green.png?1') no-repeat right;
+}
+
+/* Кнопка запроса наличия номера */
+.button-check-availability {
+    background : url('/static/img/button_check_availability.png') no-repeat right;
+    width      : 65px;
+    height     : 27px;
+}
+
+.check-availability-column {
+    padding : 9px 10px 5px 10px !important;
+}
+
+/* Модуль рейтинга отелей */
+table.feedback_module td {
+    padding : 5px 10px;
+}
+
+/* Страница добавления отзыва об отеле */
+table.feedback th, table.feedback td {
+    padding : 0 !important;
+}
+
+table.report .rating_table td {
+    padding : 4px 20px;
+}
+
+table.review td {
+    padding : 10px 0 0 20px;
+}
+
+#feedback_form #error p { color : #FF6600; }
+
+#feedback_form #error ul { font-size : 13px; }
+
+.feedback .ui-slider { border : 1px solid #CCCCCC; height : 4px !important; }
+
+.feedback .ui-slider-horizontal .ui-slider-handle { border : none !important; top : -7px !important; height : 18px;}
+
+/* Модуль фотографии отеля */
+.hotel_photo_container { display : inline-block; width : 83px; height : 65px; overflow : hidden; margin-right : 11px; margin-bottom : 10px; }
+
+.hotel_photo { cursor : pointer; margin-bottom : 11px;}
+
+/* Страница оформления заказа */
+#bookFormTable {
+    width : 100%;
+}
+
+#bookFormTable td {
+    padding : 5px 0 5px 5px;
+}
+
+#bookFormTable tr.odd {
+    background-color : #dfdfdf;
+}
+
+#transfers td {
+    padding : 5px 0;
+}
+
+/* Форма заказа трансфера */
+table#transfers label {
+    color  : #006699;
+    cursor : pointer;
+}
+
+table#transfers label span {
+    border-bottom : 1px dashed #006699;
+}
+
+table#transfers > tbody > tr > td {
+    padding : 5px 0 5px 10px;
+}
+
+table#transfers input[type=text] {
+    width      : 200px;
+    background : #FFF;
+}
+
+table#transfers textarea {
+    width : 220px;
+}
+
+/* Страница текущий заказ */
+#bookForm input[type=text] {
+    width : 200px;
+}
+
+#bookForm textarea {
+    width : 220px;
+}
+
+.cartTable td, .cartTable th {
+    padding : 13px 15px 13px 0 !important;
+}
+
+.cartTable td.first {
+    padding-left : 15px !important;
+}
+
+/* Страница новости */
+div.rss_item {font-size : 12px;}
+
+div.rss_item h2 {font-size : 1.5em; text-align : left;}
+
+/* ссылка на источник */
+div.rss_item p.link {font-size : 0.9em; text-align : right;}
+
+/* ссылка на источник */
+div.rss_item div.rss_text {margin-bottom : 10px;}
+
+div.rss_item div.rss_text img {float : left; margin : 0 10px 10px 10px;}
+
+div.rss_list p {font-size : 0.9em; padding-left : 10px;}
+
+div.rss_list {font-size : 12px;}
+
+div.rss_list p {font-size : 0.9em; }
+
+div.rss_list p a {font-size : 1.2em; font-weight : bold;}
+
+div.rss_list div.navigation {text-align : center;}
+
+div.rss_list div.navigation ul.pages {text-align : center;}
+
+div.rss_list div.navigation ul.pages li {display : block; float : left; width : 20px; height : 10px; margin : 5px; padding : 0;}
+
+div.rss_list div.navigation ul.pages li a {display : block; float : left; width : 20px; height : 10px; margin : 0; padding : 0;}
+
+a.news_vote {margin : 10px;}
+
+ul.pages li {
+    display : inline;
+    padding : 5px;
+}
+
+ul.pages {
+    padding : 0;
+}
+
+/* Страница визы */
+.visa_country_list td.active {
+    background-color : #ffda82;
+}
+
+.visa_country_list td.active a {
+    color : #333;
+}
+
+/* Страница бронирования трансфера */
+.transfer_form #from, #to { width : 150px; }
+
+.separator {
+    font-family : italic;
+    font-weight : bold;
+}
+
+.search_transfer td {
+    padding : 0 5px;
+}
+
+.transfer_form h1 {
+    font-size   : 18px;
+    margin-left : 10px;
+}
+
+.person_info input[type=text], .person_info textarea { width : 350px;}
+
+.person_info input[name=phone] {width : 308px;}
+
+.search_transfer select {
+    width : 180px;
+}
+
+/* Модуль выбора города в турах */
+#tour_city {
+    width : 100%;
+}
+
+/* Страница помощь */
+.question > a {
+    padding-left : 20px;
+    background   : url('/static/img/bg_faq_close.png') no-repeat left top;
+}
+
+.question > a.open {
+    background : url('/static/img/bg_faq_open.png') no-repeat left top !important;
+}
+
+.question > a:hover {
+    text-decoration : none;
+}
+
+.question > a span {
+    border-bottom : 1px dashed #006699;
+}
+
+.faq td {
+    padding     : 7px 0;
+    line-height : 23px;
+}
+
+.faq input[type=text] {
+    width : 210px;
+}
+
+.faq select, .faq textarea {
+    width : 230px;
+}
+
+/* Главная страница конкурса «Звезда Броневика» */
+.anketa .data > div {
+    margin : 0 0 10px 0;
+}
+
+.anketa .data .hotel {
+    font-weight : bold;
+}
+
+.anketa td {vertical-align : top;}
+
+.anketa .photo {padding-left : 20px; }
+
+.person { font-size : 16px; color : #888888; margin-bottom : 10px; }
+
+.person span { color : darkgreen; }
+
+.links { padding : 30px 0; font-size : 14px; }
+
+.anketa .fio { color : #006699; font-size : 18px; margin-bottom : 5px; }
+
+.miss_photo {
+    cursor : pointer;
+}
+
+/* Страница участника конкурса «Звезда Броневика» */
+.anketa .photo_personal {
+    padding-right : 15px;
+}
+
+.anketa dl {
+    margin    : 0;
+    font-size : 15px;
+}
+
+.anketa dt {
+    font-weight : bold;
+}
+
+.anketa dd {
+    margin-bottom : 20px;
+}
+
+.paginator {margin : 0 !important;}
+
+/* Модуль добавить пожелание для участника ЗБ */
+.anketa_add_comment div {
+    margin-bottom : 15px;
+}
+
+/* Блок ошибок на странице заказа трансфера */
+.transfer_form .errors {
+    color : red;
+}
+
+/**
+* Стили для сортировки
+*/
+table.tablesorter {
+    /*	font-family:"Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;*/
+
+    width      : 100%;
+    text-align : left;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    /*background-color: #EEEEEE;*/
+    /*border: 1px solid #FFF;*/
+    /*font-size: 8pt;*/
+    /*padding: 4px;*/
+
+}
+
+table.tablesorter thead tr .header_ {
+    cursor : pointer;
+}
+
+table.tablesorter thead tr .header_ span {
+    background-image    : url('/static/img/tablesorter-bg.png');
+    background-repeat   : no-repeat;
+    background-position : center right;
+}
+
+table.tablesorter tbody tr.odd td {
+    /*background-color: #FFF;*/
+}
+
+table.tablesorter thead tr .headerSortUp span {
+    background-image : url('/static/img/tablesorter-asc.png');
+}
+
+table.tablesorter thead tr .headerSortDown span {
+    background-image : url('/static/img/tablesorter-desc.png');
+}
+
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    /*background-color: #CDCDCD;*/
+}
+
+table.tablesorter thead tr span {
+    padding-right : 12px;
+    width         : 100%;
+    height        : 100%;
+}
+
+
+.blockOverlay {
+    opacity          : 0.5;
+    -ms-filter       : "alpha(opacity=50)";
+    filter           : alpha(opacity=50);
+    background-color : gray;
+}
+
+.blockMsg {
+    width         : 60% !important;
+    left          : 20% !important;
+    top           : 30% !important;
+    border-radius : 10px;
+}
+
+
+/**
+ * Новая страница поиска отелей
+ */
+.page.search-hotel-page .header { border-radius : 0; }
+
+.page.search-hotel-page .content { padding-top : 0; }
+
+.shp-wrapright { float : left; width : 100%; }
+
+.shp-right { margin-left : 265px; }
+
+.shp-left { float : left; width : 240px; margin-left : -100%; }
+
+/* Форма поиска */
+.shp-search-form { height : 48px; margin-bottom : 15px; white-space : nowrap; border-bottom : 1px solid #DDD; border-radius : 0 0 7px 7px; background : #f3f3f3; }
+
+.shp-search-form input { height : 17px; border-radius : 4px; box-shadow : 1px 1px 4px #DFDFDF inset; border-color : #AAA; }
+
+.shp-search-form select { height : 23px; border-color : #aaa; border-radius : 4px; box-shadow : 1px 1px 4px #dfdfdf inset; font-size : 14px; padding : 1px 0 1px 10px; }
+
+.shp-search-form-target { float : left; width : 240px; margin-right : 10px; margin-top : 13px; padding-left : 15px; }
+
+.shp-search-form-target input { width : 192px; padding-right : 20px; }
+
+.shp-search-form-target input.target_error { border : 2px solid #FF6600; margin : -1px auto auto -1px; }
+
+.shp-search-form-date { position : relative; float : left; margin-top : 12px; }
+
+.shp-search-form-date input { padding : 2px 10px; width : 96px !important; }
+
+.shp-search-form-date .datepicker_icon { margin-top : -22px !important; margin-left : 97px; }
+
+.shp-search-form-date-divider { float : left; margin : 16px 5px 0 5px; color : #AAA; }
+
+.shp-search-form-guests { float : left; margin-top : 13px; margin-right : 15px; }
+
+.shp-search-form-nodates { float : left; white-space : nowrap; margin-top : 14px; margin-left : 15px; cursor : pointer; }
+
+.shp-search-form-nodates input { position : relative; top : 2px; height : auto; cursor : pointer; }
+
+.shp-search-form-client { float : left; margin-left : 20px; margin-top : 13px; }
+
+.shp-search-form-client select { width : 100px; }
+
+.shp-search-form-button { margin-left : 20px; }
+
+.shp-search-form span.cleanable span { top : 1px; }
+
+/* Переключатель карты */
+.shp-map-switcher { width : 232px; height : 80px; position : relative; overflow : hidden; border : 1px solid #DDD; margin-bottom : 20px; border-radius : 4px; padding : 3px; cursor : pointer; }
+
+.shp-map-switcher img { width : 232px; height : 59px; border-radius : 3px 3px 0 0; }
+
+.shp-map-switcher div { width : 100%; position : absolute; bottom : 0; padding : 2px 0 4px 0; background : #FFF; font-weight : bold; text-align : center; }
+
+/* Фильтры */
+.shp-filter { margin-bottom : 12px; padding-bottom : 10px; border-bottom : 1px solid #DDD; }
+
+.shp-filter-last { border-bottom : none; }
+
+.shp-filter ul { list-style-type : none; list-style-image : none; margin : 0; padding-left : 10px; }
+
+.shp-filter-title { margin-bottom : 10px; font-weight : bold; font-size : 15px; }
+
+.shp-filter-slider { margin : 0 8px 10px 8px; }
+
+.shp-filter-slider-label { visibility : hidden; text-align : center; margin : -6px 0 5px 0; }
+
+.shp-filter ul#filterCategory { position : relative; }
+
+.shp-filter ul#filterCategory li.shp-filter-category-nostars { position : absolute; bottom : 0; left : 100px; }
+
+.shp-filter-stars { margin-bottom : 2px; }
+
+.shp-filter-input { margin-bottom : 5px; width : 218px; border-color : #AAA; border-radius : 4px; box-shadow : 1px 1px 4px #DFDFDF inset; }
+
+.shp-filter-breakfast { padding-left : 10px; padding-top : 8px; }
+
+.shp-filter-china-friendly { white-space : nowrap; }
+
+.shp-filter .ui-slider { position : relative; text-align : left; cursor : pointer; background : #F0F0F0; border : 1px solid #DDDDDD;}
+
+.shp-filter .ui-slider-horizontal { height : 1px; margin-top : 4px; padding-top : 1px; }
+
+.shp-filter .ui-state-default { background : url("/static/img/slider_grey.gif") no-repeat scroll 0 0 transparent !important; border : none !important; color : #555555; font-weight : normal; }
+
+.shp-filter .ui-widget-header { background : url("/static/img/slider_orange_bg.gif") repeat-x scroll left center transparent !important; color : #222222; font-weight : bold; }
+
+.shp-filter .ui-slider-horizontal .ui-slider-range { height : 4px; top : -1px; }
+
+.shp-filter .ui-corner-all { border-radius : 4px 4px 4px 4px; }
+
+.shp-filter .ui-slider-horizontal .ui-slider-handle { top : -6px; }
+
+/* Карта */
+.shp-right #map_frame { width : 99.8% !important; margin-bottom : 15px; border : 1px solid #DDD; border-radius : 4px; }
+
+.shp-right .map_toggle { display : none; }
+
+/* Панель сортировки */
+.shp-sort-panel { margin-bottom : 15px; background : #f3f3f3; border : 1px solid #DDD; border-radius : 4px 4px 0 0; }
+
+/* Сортировка */
+.shp-sort { position : relative; padding : 9px 0 10px 0; }
+
+.shp-sort-count { float : left; width : 150px; text-align : center; margin-right : 5px; visibility : hidden; color : #666; }
+
+.shp-sort ul { white-space : nowrap; margin : 0; padding : 0; }
+
+.shp-sort li { display : inline; padding : 5px 10px 5px 10px; cursor : pointer; text-decoration : underline; }
+
+.shp-sort li:hover { text-decoration : underline; }
+
+.shp-sort li.selected { /* border: 1px solid #ccc; padding: 5px 9px 5px 9px; background: #FFF; */ padding : 0 9px; font-weight : bold; text-decoration : none; }
+
+.shp-sort li.selected span {
+    border-color : #333 transparent transparent;
+    border-style : solid;
+    border-width : 3px 3px 0;
+    width        : 0;
+    height       : 0;
+    position     : relative;
+    left         : 4px;
+    top          : 10px;
+}
+
+.shp-sort li.selected.reverse span {
+    border-color : transparent transparent #333;
+    border-width : 0 3px 3px;
+    top          : -8px;
+}
+
+.shp-sort-nights { position : absolute; top : 9px; right : 15px; }
+
+.shp-load-animation { margin : 60px auto 0 auto; width : 32px; height : 32px; background : url('/static/img/progress_bar.gif'); }
+
+.shp-nothing-found { margin : 60px auto 0 auto; font-weight : bold; text-align : center; display : none; }
+
+/* Карточка отеля */
+.shp-hotel { position : relative; min-height : 105px; border : 1px solid #DDD; background : #FFF; margin-bottom : 15px; }
+
+.shp-hotel-photo { bottom : 0; left : 0; overflow : hidden; position : absolute; top : 0; width : 150px; }
+
+.shp-hotel-photo-crop img { margin-top : -9px; }
+
+.shp-hotel-photo img { width : 150px; }
+
+.shp-hotel-content { margin-left : 150px; }
+
+.shp-hotel-content-left { display : inline-block; margin-right : 160px; padding : 10px 10px 10px 15px; }
+
+.shp-hotel-content-right { position : absolute; top : 0; right : 0; margin-top : 8px; margin-right : 15px; /*width: 160px;*/ text-align : right; }
+
+/*.shp-hotel-content-right div { height: 26px; }*/
+.shp-hotel-name { font-size : 22px; color : #2D98CE; }
+
+.shp-hotel-address { width : 100%; display : inline-block; margin-top : 3px; }
+
+.shp-hotel-address span { padding-left : 15px; color : #666; }
+
+.shp-hotel-stars { float : left; margin-right : 15px; margin-top : 15px; width : 51px; height : 9px; }
+
+.shp-hotel-stars-0 { background : url('/static/img/star0_mini_full.png') no-repeat; }
+
+.shp-hotel-stars-1 { background : url('/static/img/star1_mini_full.png') no-repeat; }
+
+.shp-hotel-stars-2 { background : url('/static/img/star2_mini_full.png') no-repeat; }
+
+.shp-hotel-stars-3 { background : url('/static/img/star3_mini_full.png') no-repeat; }
+
+.shp-hotel-stars-4 { background : url('/static/img/star4_mini_full.png') no-repeat; }
+
+.shp-hotel-stars-5 { background : url('/static/img/star5_mini_full.png') no-repeat; }
+
+.shp-hotel-rating { display : inline-block; margin-top : 6px; height : 25px; overflow : hidden; color : #F60; }
+
+.shp-hotel-rating-average { font-size : 18px; padding-right : 2px; }
+
+.shp-hotel-rating-count { padding-left : 10px; color : #666; }
+
+.shp-hotel-price { font-size : 22px; }
+
+.shp-hotel-breakfast { font-size : 11px; white-space : nowrap; color : #666; }
+
+.shp-hotel-tax-and-fee { font-size : 11px; white-space : nowrap; color : #666; margin-top : -2px; }
+
+.shp-hotel-moneybag { width : 29px; height : 40px !important; margin : 5px auto 7px; background : url('/static/img/money_bag.png'); }
+
+/**
+ * Новая страница отеля
+ */
+.page.hotel-page .left_block { margin-right : 293px; }
+
+.page.hotel-page .right_block { margin : 0 0 0 -263px; float : right; width : 263px; }
+
+/* Запрет выделения */
+.noselect {
+    -webkit-touch-callout : none;
+    -webkit-user-select   : none;
+    -khtml-user-select    : none;
+    -moz-user-select      : none;
+    -ms-user-select       : none;
+    user-select           : none;
+}
+
+/* Служебная информация об отеле */
+fieldset.confident { border-radius : 7px; border : 1px solid #DDD; margin-left : 0; margin-right : 0; padding : 5px 10px 10px 10px; background : #FFF; }
+
+fieldset.confident legend {
+    color : #707070;
+    width : auto;
+}
+
+/* новые - модные кнопочки */
+.submit {
+    background-color : #fff;
+    border           : 1px solid #ED5601;
+    color            : #ED5601 !important;
+    border-radius    : 5px;
+    height           : 39px !important;
+    text-transform   : uppercase;
+    font-size        : 16px;
+}
+
+.submit:hover {
+    color            : #fff !important;
+    border           : 1px solid #ED5601;
+    background-color : #ED5601 !important;
+}
+
+.submit:focus {
+    color            : #fff !important;
+    border           : 1px solid #ED5601;
+    background-color : #D04B01 !important;
+}
+
+/*Полосатая таблица*/
+.table-striped > tbody > tr:nth-child(odd) {
+    background-color : #f9f9f9;
+}
+
+.btn-btn {
+    background-color : #fff;
+    border           : 1px solid #ED5601;
+    color            : #fff !important;
+    border-radius    : 5px;
+    height           : 39px !important;
+    text-transform   : uppercase;
+    font-size        : 16px;
+}
+
+.btnRed {
+    background-color : #ED5601;
+}
+
+.btnRed:hover {
+    background-color : #e3010f;
+}
+
+.fullWidth {
+    width : 100%
+}
+
+/* Инфоблок - изменения */
+div.changes, div.errors {
+    display          : table;
+    margin           : 10px 0 10px 0;
+    padding          : 0 10px 0 10px;
+    border           : 1px solid #888;
+    background-color : #FFFFD7;
+}
+
+div.changes h1, div.errors h1 {
+    font-size : 13px;
+}
+
+.text-center {
+    text-align : center;
+}
+
+/*Выделение текста точками*/
+.dotted {
+    border-bottom : dotted 1px rgba(3, 3, 3, .3);
+}
+
+.non-refundable-rate {
+    background-color : #FFF1D9;
+}
+
+.rate-notice {
+    display : inline-block;
+}
+
+.rate-notice.green {
+    color : #53b258;
+}
+
+.rate-notice.red, .non-refundable-rate .rate-notice {
+    color : #FFA100;
+}
+
+.rate-icon {
+    display           : inline-block;
+    width             : 16px;
+    height            : 18px;
+    background-size   : 100%;
+    vertical-align    : middle;
+    background-repeat : no-repeat;
+}
+
+.icon-refundable {
+    background-image : url(/static/img/redesign/icons/icon-refundable.png?1);
+}
+
+.icon-non-refundable {
+    background-image : url(/static/img/redesign/icons/icon-non-refundable.png?1);
+}
+
+.non-refundable-rate .icon-non-refundable {
+    background-image : url(/static/img/redesign/icons/icon-non-refundable.png?1);
+}
+
+.new-icon {
+    display        : inline-block;
+    width          : 22px;
+    height         : 22px;
+    background     : url("/static/img/redesign/icons/icon-service-option-sprite.png?20160114") no-repeat;
+    vertical-align : middle;
+}
+
+.new-icon-warning-info {
+    background-position : -740px -116px;
+}
+
+.long-stay-notification {
+    color       : red;
+    font-size   : 20px;
+    padding-top : 10px;
+}
+
+.long-stay-notification .new-icon {
+    vertical-align : bottom;
+}
+
+.notify-blacklist-rhp {
+    color       : #ED7310;
+    font-weight : bold;
+}
+
+table.comission_info {
+    width  : 100%;
+    margin : 0 20px 18px 5px;
+}
+
+table.comission_info th, table.comission_info td {
+    border-top : none;
+    padding    : 2px 3px;
+    text-align : left;
+    font-size  : 12px;
+}
+
+table.comission_info {
+    width  : 100%;
+    margin : 0 20px 18px 5px;
+}
+
+table.comission_info th, table.comission_info td {
+    border-top : none;
+    padding    : 2px 3px;
+    text-align : left;
+    font-size  : 12px;
+}
